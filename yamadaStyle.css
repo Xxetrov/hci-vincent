@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    background-color:rgb(199, 65, 32);
+}
+html{
+    scroll-behavior:smooth;
+}
+nav{
+    display :flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    opacity: 0.8;
+    min-height: 8hv;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.wallpaper-image{
+    background-image: url(images/motogp1.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.wallpaper-text{
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    font-size: 80px;
+    color: rgb(199, 65, 32);
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+.logo{
+    color: rgb(248, 240, 227);
+    letter-spacing: 2px;
+    font-size:25px;
+}
+.logo img{
+    width: 150px;
+    
+}
+.navbar-link{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+     
+}
+.navbar-link a{
+    text-decoration: none;
+    font-weight : 600;
+    font-size : 18px;
+    color : rgb(199, 65, 32);
+    letter-spacing: 1px;
+    transition: 0.5s;
+    
+}
+.navbar-link a:hover{
+    text-decoration: underline rgb(248, 240, 227) 3px;
+
+}
+.navbar-link li{
+    list-style : none;
+}
+
+#section-2{
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+#judul-sec2{
+    padding-left:200px;
+    font-size: 30px;
+}
+
+.container-motor{
+    max-width: 1200px;
+    margin: 10px auto;
+    justify-content: space-evenly;
+    background-color: rgb(50, 36, 36);
+    border: 5px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-radius:5px;
+    
+
+}
+.motor img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.motor{
+    position: relative;
+}
+.motor-overlay {
+    position: absolute;
+    height: 84%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(199, 65, 32);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top:20px;
+    border: 5px rgb(248, 240, 227)solid;
+}
+    
+
+.motor:hover .motor-overlay {
+    opacity: 0.8;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: rgb(73, 71, 70);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.social-footer{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.social-footer img{
+    width: 60px;
+    margin-left: 100px;
+}
+.social{
+    justify-content:space-around;
+}
+.social img{
+    width: 50px;
+    transition: 0.5s;
+}
+.social img:hover{
+    width: 50px;
+    opacity: 0.6;
+}
+#footer-text{
+    position: relative;
+    right: 180px;
+    font-size: 20px;
+    color: rgb(255, 228, 196);
+}
+#banner{
+    width: 100vw;
+}
+
+
+/* about website*/
+
+
+.about{
+    width:100%;
+    padding: 80px;
+    height: 100vh;
+}
+.about img{
+    width: 400px;
+    height: auto;
+    opacity: 0.9;
+    transition: .5s ease;
+    border-radius:5px;
+}
+
+    
+.about img:hover{
+    box-shadow: 8px 8px 8px 2px;
+    width: 410px;
+}
+.about-text{
+    width: 600px;
+}
+.about-text h1{
+    color: rgb(248, 240, 227);
+    margin-bottom: 10px;
+    font-size: 70px;
+}
+.about-text h3{
+    font-size: 30px;
+}
+.about-text p{
+    font-size: 20px;
+}
+.main{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* form website */
+.container-form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    padding: 200px 100px;
+}
+
+.form-box{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+    border: 5px solid black;
+    max-width: 900px;
+    background-color:black;
+    border-radius: 5px;
+}
+.img-left{
+    height: 100%;
+    width: 100%;
+    background: url("images/form-img.webp") center no-repeat;
+    background-size: cover;
+}
+.form-right{
+    padding: 30px;
+}
+h3{
+    position: relative;
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: rgb(248, 240, 227);
+}
+.form-input{
+    width: 100%;
+	background-color: rgb(248, 240, 227);
+    border: 2px solid rgb(248, 240, 227);
+	padding: 0.3rem 0.8rem;
+	margin-bottom: 20px;
+}
+.form-right label{
+    color: rgb(248, 240, 227);
+    font-size: 20px;
+}   
+
+
